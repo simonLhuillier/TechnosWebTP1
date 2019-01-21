@@ -5,6 +5,11 @@ html {
 }
 
 
+.Info a{
+         text-decoration: none;
+         
+}
+
 #nav {
 	padding: 0; margin: 0;
 	text-align: center;
@@ -19,21 +24,35 @@ html {
 #nav a {
 	display:inline-block;
 	margin: 0 30px;
+         font-family: 'BeonRegular'; 
+         color: rgb(131,158,118);
+         font-size: 20px;
+         text-decoration: none;
+         
 }
 
 .Date{
          
-    font-size: 22px;
+    font-size: 18px;
          color: darkkhaki;
+         margin: 2px;
 
+}
+
+.Date span {
+         color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .Coordonne{
           font-size: 19px;
          color: darkkhaki;
          list-style-type: none;
          display: inline-block;
+             column-count: 3;
+    column-gap: 21%;
 }
-
 
 
 
@@ -50,15 +69,19 @@ body {
 }
 
 h2, h3, h4, h5, h6 {
-    color: #222;
+    color:dimgray;
     font-weight: 600;
     line-height: 1.3;
+         text-align: center;
 }
 
 h1 {
          font-family: 'BeonRegular'; 
          color: rgb(131,158,118);
          font-size: 40px;
+         text-align: center;
+         font-weight: normal;
+
          
 }
 
@@ -73,10 +96,18 @@ a {
 b, strong {
     font-weight: 600;
 }
+img{
+         
+}
 
+img#in {
+    width: 30px;
+    display: inline;
+         margin-left: 20px;
+}
 
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+img#id{
+          animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     border: 10px solid rgba(0, 0, 0, 0.12);
     border-radius: 1090px;
@@ -84,4 +115,28 @@ img {
     margin: 1.3em auto;
     max-width: 35%;
 }
-
+svg {
+  max-width: 45%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+         float: right
+}
+svg path {
+  stroke-dasharray: 1077.92211914;
+  stroke-dashoffset: 1077.92211914;
+  -webkit-animation: draw 5s infinite alternate;
+          animation: draw 5s infinite alternate;
+}
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
